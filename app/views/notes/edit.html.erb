@@ -1,0 +1,11 @@
+<h1>Edit <%= @note.note %></h1> 
+
+<%= form_for @note do |n| %>
+  <%= n.label :note %>
+  <%= n.text_field :note %>
+  <br />
+  <%= n.label :body %>
+  <%= n.text_field :body %>
+  <br />
+  <%= n.submit %> 
+  <% end %> 

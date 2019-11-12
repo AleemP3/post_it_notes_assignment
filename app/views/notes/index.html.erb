@@ -1,0 +1,7 @@
+<h1>To-Do Notes</h1>
+<hr />
+<button><%= link_to "New Note", new_note_path %></button>
+
+<% @notes.each do |note| %>
+    <%= link_to note.note, note_path(note.id) %>
+  <% end %>
